@@ -1,0 +1,22 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "123456",
+    "database": "postgres",
+    "schema": "public",
+    "entities": [
+      "./src/entities/*.entity.{ts,js}"
+    ],
+    "synchronize": false,
+    "logging": true,
+    "migrations": [
+      "./src/shared/typeorm/migrations/*.{ts,js}"
+    ],
+    "cli": {
+      "entitiesDir": "./src/entities",
+      "migrationsDir": "./src/shared/typeorm/migrations"
+    },
+    "migrationsRun": false
+  }
